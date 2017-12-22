@@ -40,6 +40,6 @@ for (let i = 0; i < 300; i++) {
      
     }
 
-console.log('mensajito yeah')
+console.log('mensajito')
 
  /* end */
