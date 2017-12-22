@@ -24,7 +24,7 @@ mi_modulo.despedir(usuario); */
 
 
  /* Funciones de flecha: */
-var suma = mi_modulo.sumar(2,6)
+/* var suma = mi_modulo.sumar(2,6)
 var mostrar = mi_modulo.mostrar(12)
 console.log(suma+' '+mostrar)
 console.log(mi_modulo.multiplica(5,8))
@@ -33,5 +33,13 @@ setTimeout(() => {
     console.log('ya termine !!');
 }, 2000);
 
-console.log('haciendo otra cosa')
+console.log('haciendo otra cosa') */
+
+for (let i = 0; i < 300; i++) {
+     console.log('Pos. => '+i)
+     
+    }
+
+console.log('mensajito')
+
  /* end */
