@@ -7,7 +7,7 @@ function saludar(nombre) {
     console.log('Hola '+nombre+'!')
 }
 
-//formas de exportar nuestras variables y funciones para ser usudas por otros modulos
+//formas de exportar nuestras variables y funciones para ser usadas por otros modulos
 /* module.exports = {
     var1 : variable,
     var2 : variable2,

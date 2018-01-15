@@ -35,11 +35,36 @@ setTimeout(() => {
 
 console.log('haciendo otra cosa') */
 
-for (let i = 0; i < 300; i++) {
+/* for (let i = 0; i < 300; i++) {
      console.log('Pos. => '+i)
      
-    }
+    } */
 
 console.log('mensajito para github yeah')
 
  /* end */
+
+ /* otras pruebas con callbacks */
+ function funcion1(numero, callback) {
+     let resultado = numero * numero
+     
+     for (let i = 0; i < 300; i++) {
+         console.log('Pos. => '+i)
+        } 
+        callback(resultado)
+    }
+    
+    function funcion2(numero, callback) {
+        let resultado = numero + numero
+        callback(resultado)
+    }
+
+ funcion1(5, function (res) {
+     console.log('El resultado en la callback es de : ' + res)
+       
+     funcion2(res,function (res) {
+            console.log('el resultado de la segunta callback es : '+ res)
+        })
+ })
+
+ /* fin de pruebas  */
