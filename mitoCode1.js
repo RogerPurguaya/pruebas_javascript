@@ -1,4 +1,3 @@
-
 const os = require('os')
 const fs = require('fs')
 const mi_modulo = require('./miModulo')
@@ -40,31 +39,26 @@ console.log('haciendo otra cosa') */
      
     } */
 
-console.log('mensajito para github yeah')
-
  /* end */
 
  /* otras pruebas con callbacks */
  function funcion1(numero, callback) {
-     let resultado = numero * numero
-     
-     for (let i = 0; i < 300; i++) {
-         console.log('Pos. => '+i)
-        } 
-        callback(resultado)
+    let resultado = 0;
+     funcion2(numero)
+     console.log('terminando funcion1 con res :'+resultado)
+     callback()
     }
     
-    function funcion2(numero, callback) {
-        let resultado = numero + numero
-        callback(resultado)
+    function funcion2(numero) {
+        setTimeout(()=>{
+            console.log('ejecucion asincrona')
+        },200)   
     }
 
- funcion1(5, function (res) {
-     console.log('El resultado en la callback es de : ' + res)
-       
-     funcion2(res,function (res) {
-            console.log('el resultado de la segunta callback es : '+ res)
-        })
+ funcion1(1 , function () {
+     console.log('fin de la callback de funcion 1')
  })
+
+ console.log('fin de la ejecucion')
 
  /* fin de pruebas  */
