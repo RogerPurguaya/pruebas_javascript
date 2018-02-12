@@ -59,6 +59,10 @@ console.log('haciendo otra cosa') */
      console.log('fin de la callback de funcion 1')
  })
 
+ function aux(param1, callback) {
+     console.log('Modificando código desde ubuntu al repositorio')
+ }
+
  console.log('fin de la ejecucion')
 
  /* fin de pruebas  */
